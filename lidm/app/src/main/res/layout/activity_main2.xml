@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <ImageView
+        android:id="@+id/texture_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/texture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/logo_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/spu_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toEndOf="@id/anim_menu"
+        app:layout_constraintTop_toTopOf="@+id/texture_menu"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageView
+        android:id="@+id/anim_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/about_menu"
+        app:layout_constraintEnd_toStartOf="@id/logo_menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/texture_menu"
+        app:srcCompat="@mipmap/chem_anim" />
+
+    <ImageView
+        android:layout_width="233dp"
+        android:layout_height="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/anim_menu"
+        app:layout_constraintTop_toBottomOf="@+id/logo_menu"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/spot" />
+
+    <ImageView
+        android:id="@+id/spu_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:src="@mipmap/btn_tpi"
+        app:layout_constraintBottom_toTopOf="@id/flash_menu"
+        app:layout_constraintEnd_toEndOf="@id/logo_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/logo_menu"
+        app:layout_constraintTop_toBottomOf="@+id/logo_menu"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <ImageView
+        android:id="@+id/flash_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:src="@mipmap/btn_flashcard"
+        app:layout_constraintBottom_toTopOf="@id/pgr_menu"
+        app:layout_constraintEnd_toEndOf="@id/spu_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/spu_menu"
+        app:layout_constraintTop_toBottomOf="@+id/spu_menu"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/pgr_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:src="@mipmap/btn_playground"
+        app:layout_constraintBottom_toTopOf="@id/kuis_menu"
+        app:layout_constraintEnd_toEndOf="@id/flash_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/flash_menu"
+        app:layout_constraintTop_toBottomOf="@+id/flash_menu"
+        app:layout_constraintVertical_bias="0.064"
+        app:layout_constraintVertical_weight="1" />
+
+    <ImageView
+        android:id="@+id/kuis_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:scaleType="fitStart"
+        android:src="@drawable/kuis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/pgr_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/pgr_menu"
+        app:layout_constraintTop_toBottomOf="@+id/pgr_menu"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <ImageView
+        android:id="@+id/about_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="6dp"
+        android:clickable="true"
+        android:foreground="?attr/actionBarItemBackground"
+        android:src="@drawable/btn_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
